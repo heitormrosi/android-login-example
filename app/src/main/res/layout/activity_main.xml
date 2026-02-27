@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/user_profile" />
+
+        <!--
+            Parte dos atributos serve para quando a pessoa escrever
+            e parte é o design do input, isto é, deve-se pensar tanto
+            na visualização/renderização quanto no fluxo de usuário.
+            Não há atributo borderRadius como na web. Por isso, deve-se
+            criar um novo recurso de desenho em shape de borda arredondada.
+         -->
+        <EditText
+            android:id="@+id/login_input"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Login"
+            android:inputType="text"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <!--
+            No caso do botão, ele vem normalmente arredondado
+            do Material Design.
+        -->
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/light_blue"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/social_logins"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+            <ImageView
+                android:id="@+id/facebook_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/facebook_logo"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:id="@+id/linkedin_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/linkedin_logo"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
