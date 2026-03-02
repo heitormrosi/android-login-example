@@ -1,4 +1,6 @@
 <img width="308" height="548" alt="image" src="https://github.com/user-attachments/assets/c9c44547-0808-4171-b05f-57f1fcd0134e" />
+<img width="305" height="547" alt="image" src="https://github.com/user-attachments/assets/5ce6c56c-32e5-4eca-af94-2b241a78c676" />
+
 
 # Exemplo de interface de login no Android com Android Studio e Kotlin
 ![Android][Android]
